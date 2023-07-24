@@ -2,11 +2,9 @@ const express = require("express");
 const app = express();
 const { db, Information } = require("./db");
 
-console.log("Information", Information);
-
 const jsonObj = { title: "Hello World!", description: "EC2 Node App!" };
 
-const PORT = 3030 || process.env.PORT;
+const PORT = 3030;
 
 app.get("/", (req, res) => {
   res.json(jsonObj);
