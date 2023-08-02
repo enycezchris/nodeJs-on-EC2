@@ -4,7 +4,7 @@ const { db, Information } = require("./db");
 
 const jsonObj = { title: "Hello World!", description: "EC2 Node App!" };
 
-const PORT = 3030;
+const PORT = 3000;
 
 app.get("/", (req, res) => {
   res.json(jsonObj);
